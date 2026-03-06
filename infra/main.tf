@@ -11,7 +11,7 @@ provider "koyeb" {
   #
 }
 
-resource "koyeb_app" "my-app" {
+resource "koyeb_app" "my-app-ok" {
   name = var.app_name
 }
 
