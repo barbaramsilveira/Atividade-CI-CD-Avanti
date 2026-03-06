@@ -31,7 +31,7 @@ resource "koyeb_service" "my-service" {
       max = 1
     }
     routes {
-      path = "/"
+      path = "/api/saudacoes/aleatorio"
       port = var.container_port
     }
     health_checks {
@@ -47,6 +47,6 @@ resource "koyeb_service" "my-service" {
   }
 
   depends_on = [
-    koyeb_app.my-app
+    koyeb_app.my-app-ok
   ]
 }
