@@ -11,7 +11,7 @@ provider "koyeb" {
   #
 }
 
-resource "koyeb_app" "my-app-ok" {
+resource "koyeb_app" "my-app" {
   name = var.app_name
 }
 
@@ -47,6 +47,6 @@ resource "koyeb_service" "my-service" {
   }
 
   depends_on = [
-    koyeb_app.my-app-ok
+    koyeb_app.my-app
   ]
 }
